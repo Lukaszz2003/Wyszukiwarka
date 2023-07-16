@@ -3,23 +3,24 @@
 const showResult = (result) => {
   const { i: image, l: label } = result;
   output.innerHTML += `
-    <br/>
-    <p>${label}</p>
-    <img alt="${label}" src="${image.imageUrl}" width="100">
-    <hr/>
-    `;
+  <br/>
+  <p>${label}</p>
+  <img alt="${label}" src="${image.imageUrl}" width="100">
+  <hr/>
+  `;
 };
 
 const getData = async (searchValue) => {
   const options = {
     method: "GET",
-    url: "https://porn-movies.p.rapidapi.com/index.php",
-    params: { id: "1" },
     headers: {
       "X-RapidAPI-Key": "64663ca6edmshe699af0afa6001fp1aa53ajsnb7c687b0545e",
-      "X-RapidAPI-Host": "porn-movies.p.rapidapi.com",
+      "X-RapidAPI-Host": "imdb-top-100-movies.p.rapidapi.com",
     },
   };
+  const url = `https://imdb-top-100-movies.p.rapidapi.com?q=${encodeURIComponent(
+    searchValue
+  )}`;
 
   try {
     const response = await fetch(url, options);
