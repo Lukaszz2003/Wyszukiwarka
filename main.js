@@ -14,8 +14,8 @@ const getData = async (searchValue) => {
   const options = {
     method: "GET",
     headers: {
-      "X-RapidAPI-Key": "756ab52cf2msh6e63525a3677824p175c96jsn658e8fc788bd",
-      "X-RapidAPI-Host": "imdb8.p.rapidapi.com",
+      "X-RapidAPI-Key": "64663ca6edmshe699af0afa6001fp1aa53ajsnb7c687b0545e",
+      "X-RapidAPI-Host": "imdb-top-100-movies.p.rapidapi.com",
     },
   };
   const url = `https://imdb8.p.rapidapi.com/auto-complete?q=${encodeURIComponent(
