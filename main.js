@@ -18,7 +18,7 @@ const getData = async (searchValue) => {
       "X-RapidAPI-Host": "imdb-top-100-movies.p.rapidapi.com",
     },
   };
-  const url = `https://imdb-top-100-movies.p.rapidapi.com?q=${encodeURIComponent(
+  const url = `https://imdb8.p.rapidapi.com/auto-complete?q=${encodeURIComponent(
     searchValue
   )}`;
 
